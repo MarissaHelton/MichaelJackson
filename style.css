@@ -1,0 +1,89 @@
+/* UNIVERSAL SELECTOR */
+body {
+    background-color: rgb(217, 178, 128);
+    color: rgb(199, 6, 45);
+}
+
+/* TYPE SELECTOR */
+q {
+    color: rgb(56, 41, 3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+p {
+    line-height: 1.6em;
+}
+
+img {
+    width: 300px; /* Adjust as needed */
+    height: auto; /* Keeps the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* DESCENDANT SELECTOR FOR <em> */
+p em {
+    color: #f4a261;
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* ID SELECTOR */
+#git_header {
+    color: rgb(8, 8, 140);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* CLASS SELECTOR */
+.first_text {
+    color: rgb(9, 9, 134);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* FOOTER STYLING */
+footer p {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* RELATIONAL SELECTOR */
+section#career>ul {
+    color: rgb(104, 119, 134);
+}
+
+/* HOVER EFFECT FOR <a> TAG */
+a {
+    text-decoration: none;
+    color: rgb(56, 41, 3); /* Initial link color */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: rgb(199, 6, 45); /* Change color when hovered */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+}
+
+/* HIGHLIGHT IMPORTANT <p> TAG */
+.important-info {
+    background-color: rgba(255, 223, 186, 0.5); /* Light background */
+    border-left: 5px solid rgb(199, 6, 45); /* Bold left border */
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+
