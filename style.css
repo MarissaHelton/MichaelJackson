@@ -4,18 +4,22 @@ body {
     color: rgb(147, 4, 33);
     margin: 0;
     font-family: 'Arial', sans-serif;
+    /* Fluid Layout: Container adjusts with viewport */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* TYPE SELECTOR */
 q {
     color: rgb(56, 41, 3);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgb(47, 4, 4);
 }
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.5em;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 6px rgba(155, 13, 13, 0.953);
     margin-bottom: 20px; /* Space below the main title */
 }
 
@@ -23,7 +27,7 @@ h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
     text-decoration: underline;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 5px rgba(209, 10, 10, 0.889);
     margin-top: 20px;
 }
 
@@ -33,8 +37,9 @@ p {
     padding-left: 20px; /* Indent for paragraphs */
 }
 
+/* Default image styling from your code */
 img {
-    width: 300px; /* Adjust as needed */
+    width: 200px; /* Adjust as needed */
     height: auto; /* Keeps the aspect ratio */
     display: block;
     margin: 0 auto; /* Centers the image */
@@ -42,22 +47,31 @@ img {
     border-radius: 10px; /* Optional: Adds rounded corners */
 }
 
+/* NEW: Scalable (Responsive) Image */
+/* Use this class for images that need to scale with their container */
+.responsive-img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
 /* DESCENDANT SELECTOR FOR <em> */
 p em {
-    color: #f4a261;
+    color: #000000;
     font-style: italic;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 3px rgb(15, 0, 0);
 }
 
 /* ID SELECTOR */
 #git_header {
-    color: rgb(8, 8, 140);
+    color: rgb(0, 0, 6);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* CLASS SELECTOR */
 .first_text {
-    color: rgb(9, 9, 134);
+    color: rgb(1, 1, 13);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -72,7 +86,7 @@ footer p {
 }
 
 /* RELATIONAL SELECTOR */
-section#career>ul {
+section#career > ul {
     color: rgb(104, 119, 134);
 }
 
@@ -90,7 +104,7 @@ a:hover {
 
 /* HIGHLIGHT IMPORTANT <p> TAG */
 .important-info {
-    background-color: rgba(255, 223, 186, 0.5); /* Light background */
+    background-color: rgb(0, 0, 0); /* Light background */
     border-left: 5px solid rgb(137, 4, 30); /* Bold left border */
     padding: 10px;
     font-weight: bold;
@@ -115,7 +129,7 @@ ul, ol {
     padding-left: 20px;
 }
 
-/* 2-Column Layout */
+/* 2-Column Layout for the Career page */
 .two-column-layout {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
@@ -128,24 +142,64 @@ ul, ol {
     border-radius: 10px;
 }
 
-/* For a 3-column layout, change grid-template-columns to 1fr 1fr 1fr */
+/* NEW: Navigation Menu Styling */
+/* This styling applies to the navigation menu on every page */
+.nav-menu {
+    list-style: none;
+    display: flex; /* Horizontal layout */
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;  /* White text for nav links */
+    text-decoration: none;
+}
+
+/* Hover effect for navigation links */
+.nav-menu a:hover {
+    background-color: #555;
+}
+
+/* MEDIA QUERIES */
+
+/* For devices with a maximum width of 768px */
 @media (max-width: 768px) {
     h1 {
         font-size: 2em; /* Smaller title on mobile */
     }
-
     img {
-        width: 100%; /* Make the image responsive */
+        width: 100%; /* Make images responsive */
     }
-
     .first_text {
         font-size: 1.2em; /* Adjust text size on small screens */
     }
-
     .two-column-layout {
-        grid-template-columns: 1fr; /* Stack columns on small screens */
+        grid-template-columns: 1fr; /* Stack columns vertically */
+    }
+    /* Change navigation to vertical layout on medium screens */
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
     }
 }
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+    .nav-menu a {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
 
 
 
