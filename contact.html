@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Michael Jackson's career from Jackson 5 to solo success">
+    <meta name="description" content="Contact page for Michael Jackson fan site">
     <link rel="stylesheet" href="style.css">
-    <title>Michael Jackson: Career</title>
+    <title>Contact Us</title>
 </head>
 
 <body>
     <header>
-        <h1>Michael Jackson's Career</h1>
+        <h1>Contact Us</h1>
         <nav>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
@@ -24,24 +24,20 @@
 
     <main>
         <section>
-            <h2>Jackson 5</h2>
-            <p>Michael Jackson was a member of the Jackson 5, which gained worldwide success in the late 1960s and early 1970s...</p>
-        </section>
+            <h2>Get in Touch</h2>
+            <p>If you have any questions or comments, feel free to reach out!</p>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
 
-        <section>
-            <h2>Solo Career</h2>
-            <p>Michael Jackson launched his solo career in 1971 and released iconic albums such as <em>Off the Wall</em>, <em>Thriller</em>, and <em>Bad</em>.</p>
-        </section>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
 
-        <section>
-            <h2>Albums</h2>
-            <ul>
-                <li>Off the Wall (1979)</li>
-                <li>Thriller (1982)</li>
-                <li>Bad (1987)</li>
-                <li>Dangerous (1991)</li>
-                <li>HIStory: Past, Present, and Future, Book I (1995)</li>
-            </ul>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
 
